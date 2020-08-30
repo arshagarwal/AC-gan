@@ -1,0 +1,3 @@
+[submodule "gdown.pl"]
+	path = gdown.pl
+	url = https://github.com/circulosmeos/gdown.pl.git
