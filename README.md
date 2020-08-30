@@ -16,9 +16,9 @@
 ## Steps to run the code using docker container(recommended way):
 1. Install the docker cli tools by following the [docker installation steps](https://docs.docker.com/engine/install/ubuntu/).
 2. Clone the repository by running `!git clone https://github.com/arshagarwal/AC-gan.git` .
-3. Run the command `docker build -f docker -t Acgan:latest .` to build the docker container. 
-4. Run the command `docker run -it Acgan:latest` to start the docker container.
-5. Run the command `python torch_train_cgan.py --data_path slim_dataset`. 
+3. Run the command `docker build -f docker -t acgan:latest .` to build the docker container. 
+4. Run the command `docker run -it acgan:latest` to start the docker container.
+5. Run the command `python torch_train_cgan.py --data_path slim_dataset/Test_dataset`. 
 **Alternatively to train on custom dataset replace the `slim_dataset/Train_dataset` string with the path of your custom dataset.** 
 6. Run the command `!python visualize.py  2` to visualize results for **2** categories. 
 ### Note: After running this command the results will be stored in **grid_results_n_epochs** directory. 
@@ -27,7 +27,7 @@
 ## Steps to run the code on Google colab
 0. Clone the code by running the command `!git clone https://github.com/arshagarwal/AC-gan.git` . 
    **Replace the username and password with your github username and password respectively.**
-1. Run the command `cd Ac-gan` to navigate to the **C_slim_gan** directory.
+1. Run the command `cd Ac-gan` to navigate to the **Ac-gan_gan** directory.
 2. Run the command `!bash import_dataset.sh` to import the **Big slim dataset**. 
 3. Run the command `!python torch_train_cgan.py --data_path Big_slim` to train on the **Big_slim_dataset**. 
 **Alternatively to train on custom dataset replace the `slim_dataset/Train_dataset` string with the path of your custom dataset.**  

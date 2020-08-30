@@ -1,6 +1,6 @@
 """
 To process Images
-Author: Bhuvan
+Author: Arsh
 """
 import tensorflow as tf
 import numpy as np
@@ -65,7 +65,6 @@ def process_3(path,img_size=(128, 128), batch_size=48):
 
 def get_labels(y):
     """
-
     :param y: categories of y for the input of the shape [batch_size,ny]
     :return: vector of shape [batch_size,] showing labels for each sample
     """
@@ -85,4 +84,3 @@ def create_z(path):
     :param path: String that denotes the path to the .npy file that is to be converted
     :return: processed numpy array
     """
-
